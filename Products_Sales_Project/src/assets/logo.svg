@@ -1,6 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <circle cx="32" cy="32" r="30" fill="#3b5bdb"/>
-  <polygon points="32,14 46,26 32,50 18,26" fill="#fff"/>
-  <polygon points="18,26 46,26 32,14" fill="#c5d0ff"/>
-  <line x1="32" y1="26" x2="32" y2="50" stroke="#3b5bdb" stroke-width="1.5"/>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+
+  <defs>
+    <linearGradient id="pink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5b4d3"></stop>
+      <stop offset="100%" stop-color="#df78ac"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Cercle de fond -->
+  <circle cx="150" cy="150" r="130" fill="#fff0f7"></circle>
+
+  <!-- Sac shopping -->
+  <path d="M85 110 L215 110 L205 225 Q150 245 95 225 Z" fill="url(#pink)" stroke="#df78ac" stroke-width="4" stroke-linejoin="round"></path>
+
+  <!-- Poignée -->
+  <path d="M120 115 V90 Q120 55 150 55 Q180 55 180 90 V115" fill="none" stroke="#df78ac" stroke-width="9" stroke-linecap="round"></path>
+
+  <!-- Cœur -->
+  <path d="M150 180
+           C125 160 115 145 130 135
+           C140 128 150 138 150 145
+           C150 138 160 128 170 135
+           C185 145 175 160 150 180Z" fill="white"></path>
+
+  <!-- Étoiles décoratives -->
+  <path d="M65 95 L70 108 L83 113 L70 118 L65 131 L60 118 L47 113 L60 108Z" fill="#df78ac"></path>
+
+  <path d="M230 75 L234 86 L245 90 L234 94 L230 105 L226 94 L215 90 L226 86Z" fill="#df78ac"></path>
+
+  <circle cx="225" cy="200" r="5" fill="#f5b4d3"></circle>
+  <circle cx="75" cy="190" r="5" fill="#f5b4d3"></circle>
+
 </svg>
