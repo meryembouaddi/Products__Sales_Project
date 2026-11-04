@@ -17,12 +17,12 @@ export default function Contact() {
         setLoading(true);
         setMessage("");
 
-      emailjs.sendForm(
-            "service_txzcx49",
-            "template_3jnm3y8",
-            form.current,
-            "ZqVcyWzn2tfHNX9MU"
-        )
+    emailjs.sendForm(
+    import.meta.env.VITE_EMAILJS_SERVICE_ID,
+    import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+    form.current,
+    import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+)
 
         .then((response) => {
             console.log("Message envoyé :", response.status);
