@@ -41,14 +41,14 @@
 .brand-name {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #1f2a5c;
+  color: #df78ac;
 }
 
 .brand-tagline {
   font-size: 0.75rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #3b5bdb;
+  color: #df78ac;
 }
 
 /* Navigation */
@@ -68,11 +68,11 @@
 
 .nav-link:hover {
   background: #eef2ff;
-  color: #3b5bdb;
+  color: #df78ac;
 }
 
 .nav-link.active {
-  background: #3b5bdb;
+  background: #df78ac;
   color: #fff;
 }
 
