@@ -21,14 +21,14 @@
   display: inline-block;
   margin-top: 20px;
   padding: 12px 24px;
-  background: #3b5bdb;
+  background: #df78ac;
   color: white;
   text-decoration: none;
   border-radius: 8px;
 }
 
 .btn:hover {
-  background: #2f4ac0;
+  background:#df78ac;
 }
 
 .description,
