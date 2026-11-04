@@ -1,22 +1,35 @@
+
+/* HOME */
 .accueil {
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
   font-family: Arial, sans-serif;
+  color: #444;
 }
 
+/* HERO SECTION */
 .hero {
   text-align: center;
   padding: 60px 20px;
-  background: #f0f4ff;
-  border-radius: 12px;
+  background: #fff0f7;
+  border-radius: 15px;
+  border: 1px solid #f8d5e6;
 }
 
 .hero h1 {
   font-size: 2.5rem;
   margin-bottom: 15px;
+  color: #df78ac;
 }
 
+.hero p {
+  color: #777;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* BUTTON */
 .btn {
   display: inline-block;
   margin-top: 20px;
@@ -25,18 +38,35 @@
   color: white;
   text-decoration: none;
   border-radius: 8px;
+  transition: 0.3s;
+  font-weight: bold;
 }
 
 .btn:hover {
-  background:#df78ac;
+  background: #c95c94;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 12px rgba(223, 120, 172, 0.3);
 }
 
+/* DESCRIPTION */
 .description,
 .avantages {
   margin-top: 40px;
   text-align: center;
 }
 
+.description h2,
+.avantages h2 {
+  color: #df78ac;
+  margin-bottom: 15px;
+}
+
+.description p {
+  color: #777;
+  line-height: 1.7;
+}
+
+/* CARDS */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -45,7 +75,40 @@
 }
 
 .card {
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
+  padding: 25px 20px;
+  background: white;
+  border: 1px solid #f8d5e6;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(223, 120, 172, 0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(223, 120, 172, 0.2);
+}
+
+.card h3 {
+  color: #df78ac;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #777;
+  line-height: 1.5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .hero {
+    padding: 40px 15px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .accueil {
+    padding: 15px;
+  }
 }
