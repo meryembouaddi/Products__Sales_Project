@@ -1,0 +1,138 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.contact-page {
+    width: 100%;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+
+.contact-header {
+    height: 295px;
+    background: #f5baf5;
+    display: flex;
+    align-items: center;
+    padding-left: 26%;
+}
+
+.contact-header h1 {
+    font-size: 80px;
+    font-weight: 500;
+    color: black;
+    margin: 0;
+}
+
+/* FORMULAIRE */
+
+.contact-section {
+    min-height: 515px;
+    padding: 48px 26%;
+    background: linear-gradient(
+        to bottom,
+        #edb1e9,
+        #f5e9e7
+    );
+}
+
+.contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+/* PREMIERE LIGNE */
+
+.form-row {
+    display: flex;
+    gap: 25px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 17px 26px;
+    font-size: 21px;
+    font-family: inherit;
+    letter-spacing: 1px;
+    color: #333;
+    background-color: #dba9cf;
+    border: 1.5px solid #80647d;
+    border-radius: 15px;
+    outline: none;
+}
+
+.contact-form input {
+    height: 62px;
+}
+
+.contact-form textarea {
+    height: 133px;
+    resize: vertical;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #393039;
+    opacity: 1;
+}
+
+/* FOCUS */
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #a00078;
+}
+
+/* BOUTON */
+
+.contact-form button {
+    width: 163px;
+    height: 61px;
+    background-color: #a00078;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 25px;
+}
+
+.contact-form button:hover {
+    background-color: #c00091;
+    transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .contact-header {
+        height: 200px;
+        padding-left: 8%;
+    }
+
+    .contact-header h1 {
+        font-size: 55px;
+    }
+
+    .contact-section {
+        padding: 35px 8%;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 17px;
+    }
+}
