@@ -139,3 +139,109 @@
     height: 250px;
   }
 }
+
+/* =====================================
+   BOUTON PANIER
+===================================== */
+
+.cart-button {
+  display: block;
+  margin: 0 auto 30px;
+  padding: 12px 25px;
+  background-color: #df78ac;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cart-button:hover {
+  background-color: #c95c94;
+  transform: scale(1.05);
+}
+
+/* =====================================
+   CONTENEUR DU PANIER
+===================================== */
+
+.cart-container {
+  margin: 20px 0 40px;
+  padding: 25px;
+  background-color: white;
+  border-radius: 15px;
+  border: 1px solid #fce4ef;
+  box-shadow: 0 4px 12px rgba(223, 120, 172, 0.15);
+  overflow-x: auto;
+}
+
+.cart-container h2 {
+  color: #df78ac;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* =====================================
+   TABLEAU DU PANIER
+===================================== */
+
+.cart-container table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+  text-align: center;
+}
+
+.cart-container th {
+  background-color: #df78ac;
+  color: white;
+  padding: 15px;
+}
+
+.cart-container td {
+  padding: 13px;
+  border-bottom: 1px solid #fce4ef;
+  color: #555;
+}
+
+.cart-container tbody tr:hover {
+  background-color: #fff7fb;
+}
+
+.cart-container h3 {
+  text-align: right;
+  color: #df78ac;
+  margin-top: 25px;
+  font-size: 22px;
+}
+
+/* =====================================
+   BOUTON SUPPRIMER
+===================================== */
+
+.cart-container td button {
+  background-color: #df78ac;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cart-container td button:hover {
+  background-color: #c95c94;
+}
+
+/* =====================================
+   MESSAGE PANIER VIDE
+===================================== */
+
+.cart-container p {
+  text-align: center;
+  color: #999;
+  padding: 20px;
+  font-size: 16px;
+}
